@@ -335,12 +335,8 @@
             <h2 style="text-align:center;">Search Courses</h2>
         </div>
         <div id="search-wrapper">
-            <div class="search-bar">
-                <input type="search" placeholder="Search your Course">
-            </div>
-            <div class="search-bar">
+                <input  type="search" placeholder="Search your Course">
                 <button id="search-btn">Search</button>
-            </div>
         </div>
     </div>
 
@@ -358,7 +354,7 @@
                     <div id="benefit-text">
                         <div id="bene-wrapper-2">
                             <div style="margin-bottom:10px;" id="benefits">
-                                <h2 style="margin-bottom:0;"><span class="purple">Benefits</span> From Online <br>
+                                <h2 class="h2-2" style="margin-bottom:0;font-size: 40px;"><span class="purple">Benefits</span> From Online <br>
                                     Learning</h2>
                             </div>
 
@@ -420,13 +416,13 @@
     </section>
 
     <style>
-        input {
-            max-width: 400px;
-            width: 100%;
-            padding: 12px 24px;
+        input{
+           width: 300px;
+            padding: 12px;
             border-radius: 8px;
-            border: 1px solid black;
-            outline-color: #9b51e0;
+            border: 1px solid #9b51e0;
+
+            
         }
 
         #search-btn {
@@ -439,9 +435,11 @@
 
         #search-wrapper {
             display: flex;
+            align-items: center;
             gap: 4px;
             justify-content: center;
             flex-wrap: wrap;
+            padding-inline: 16px;
         }
 
         #search-image {
@@ -476,7 +474,7 @@
             display: flex;
             justify-content: center;
             gap: 64px;
-            align-items: center;
+            align-items:center;
         }
 
         .section-4 {
@@ -725,7 +723,7 @@
                 <div class="teacher-container">
                     <div class="teacher-wrapper">
                         <div id="teacher-head">
-                            <h2 id="Teacher" style="margin-bottom:0;">If You Are A Certified Teacher <br>
+                            <h2 class="h2-2" style="margin-bottom:0;font-size: 40px;">If You Are A Certified Teacher <br>
                                 Then <span class="purple">Became An Instructor</span></h2>
                             <p id="t-para" style="margin-top:16px;max-width: 65ch;width:100%;">Leaverage your teaching expertise to inspire learners beyond the
                                 classroom. As an instructor, you can share your knowledge with a
@@ -1159,6 +1157,11 @@
                 #circle{
                     display: none;
                 }
+            }
+            @media(max-width:525px){
+              .h2-2{
+                font-size: 32px !important;
+              }
             }
             @media(max-width:339px){
                #list-wrapper{
